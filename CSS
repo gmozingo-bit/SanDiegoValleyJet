@@ -471,7 +471,7 @@
 
 /* ── SECTION DEFAULTS ── */
 .lv-section {
-  padding: 80px 0;
+  padding: 80px 10vw;
 }
 .lv-section-dark {
   background: var(--vj-navy);
@@ -524,6 +524,7 @@
 
 .lv-intro-img {
   position: relative;
+  min-height: 480px;
 }
 .lv-intro-img img {
   width: 100%;
@@ -736,6 +737,7 @@
   .lv-airport-grid { grid-template-columns: 1fr; }
   .lv-aircraft-grid { gap: 1px; }
   .lv-intro-badge { right: 0; bottom: 0; }
+  .lv-section,
   .lv-section-dark,
   .lv-section-light { padding: 60px 6vw; }
 }
