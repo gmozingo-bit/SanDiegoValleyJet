@@ -741,3 +741,498 @@
   .lv-section-dark,
   .lv-section-light { padding: 60px 6vw; }
 }
+
+/* ═══════════════════════════════════════════════
+   SAN DIEGO PAGE — sd- PREFIXED STYLES
+   ═══════════════════════════════════════════════ */
+
+/* ── HERO BANNER ── */
+.sd-hero {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 88vh;
+  background:
+    linear-gradient(to right, rgba(15,22,38,.92) 45%, rgba(15,22,38,.45) 100%),
+    url('https://valleyjet.com/wp-content/uploads/2020/07/Jetex-FBO-1500x990-1-e1594931333793.jpg') center 35% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 10vh 10vw;
+  animation: heroFadeIn 1.5s ease-in-out;
+}
+
+.sd-hero-inner { max-width: 620px; }
+
+.sd-eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: var(--vj-orange);
+  margin-bottom: 16px;
+}
+
+.sd-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 700;
+  color: var(--vj-white);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.sd-hero h1 span { color: var(--vj-orange); }
+
+.sd-hero p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.75);
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.sd-hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* ── STATS STRIP ── */
+.sd-stats {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: var(--vj-navy);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 3px solid var(--vj-orange);
+}
+
+.sd-stat {
+  padding: 2.2rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.08);
+}
+.sd-stat:last-child { border-right: none; }
+
+.sd-stat-num {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--vj-orange);
+  line-height: 1;
+}
+.sd-stat-label {
+  display: block;
+  font-size: .7rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+  margin-top: .4rem;
+}
+
+/* ── SECTION CONTAINERS ── */
+.sd-section {
+  padding: 80px 10vw;
+}
+
+.sd-section-dark {
+  background: var(--vj-navy);
+  color: var(--vj-white);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 10vw;
+}
+
+.sd-section-light {
+  background: var(--vj-light);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 10vw;
+}
+
+.sd-section-white {
+  background: #fff;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 10vw;
+}
+
+/* ── SECTION HEADER ── */
+.sd-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sd-section-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: var(--vj-white);
+}
+
+.sd-section-header.sd-header-dark h2 { color: var(--vj-navy); }
+
+.sd-section-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,.65);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.sd-section-sub.sd-sub-dark { color: var(--vj-muted); }
+
+/* ── EYEBROW SMALL ── */
+.sd-eyebrow-sm {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: var(--vj-orange);
+  margin-bottom: 10px;
+}
+
+/* ── INTRO TEXT COLUMN ── */
+.sd-intro-text h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--vj-navy);
+}
+.sd-intro-text p {
+  font-size: .95rem;
+  line-height: 1.7;
+  color: var(--vj-muted);
+  margin-bottom: 16px;
+}
+
+.sd-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+.sd-check-list li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  font-size: .9rem;
+  color: var(--vj-muted);
+}
+.sd-check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--vj-orange);
+  font-weight: 700;
+}
+
+.btn-outline-dark-bg {
+  border-color: var(--vj-orange) !important;
+  color: var(--vj-navy) !important;
+}
+.btn-outline-dark-bg:hover {
+  background: var(--vj-orange) !important;
+  color: #fff !important;
+}
+
+/* ── AIRCRAFT GRID ── */
+.sd-aircraft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 40px;
+}
+
+.sd-aircraft-card {
+  background: rgba(255,255,255,.05);
+  border-top: 3px solid transparent;
+  padding: 30px 24px;
+  transition: border-color .3s, background .3s;
+}
+.sd-aircraft-card:hover,
+.sd-ac-featured {
+  border-color: var(--vj-orange);
+  background: rgba(255,83,61,.07);
+}
+
+.sd-ac-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.sd-ac-type {
+  display: block;
+  font-size: .68rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--vj-orange);
+  margin-bottom: 6px;
+}
+
+.sd-ac-badge {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.7);
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+.sd-ac-badge-orange {
+  background: var(--vj-orange);
+  color: #fff;
+}
+
+.sd-ac-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vj-white);
+  margin-bottom: 10px;
+}
+
+.sd-aircraft-card p {
+  font-size: .88rem;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.sd-ac-specs {
+  display: flex;
+  gap: 16px;
+  font-size: .78rem;
+  color: rgba(255,255,255,.4);
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 12px;
+  margin-top: 14px;
+}
+.sd-ac-specs span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sd-ac-other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgba(255,255,255,.15);
+  background: transparent;
+}
+.sd-ac-other-inner {
+  text-align: center;
+  padding: 10px;
+  color: rgba(255,255,255,.55);
+}
+.sd-ac-other-inner svg { margin-bottom: 12px; }
+
+.btn-primary-sm {
+  padding: 8px 20px !important;
+  font-size: .8rem !important;
+  margin-top: 12px !important;
+}
+
+/* ── SERVICES GRID ── */
+.sd-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.sd-service-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sd-service-icon {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  background: var(--vj-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.sd-service-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vj-navy);
+  margin-bottom: 6px;
+}
+.sd-service-item p {
+  font-size: .9rem;
+  color: var(--vj-muted);
+  margin: 0;
+}
+
+/* ── SAFETY SECTION ── */
+.sd-safety-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.sd-safety-text h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--vj-navy);
+  margin-bottom: 16px;
+}
+.sd-safety-text p {
+  font-size: .95rem;
+  color: var(--vj-muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.sd-safety-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sd-badge-card {
+  background: var(--vj-navy);
+  color: var(--vj-white);
+  padding: 20px 28px;
+  text-align: center;
+  min-width: 160px;
+  border-top: 3px solid var(--vj-orange);
+}
+.sd-badge-card strong {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--vj-orange);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.sd-badge-card span {
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.6);
+}
+
+/* ── AIRPORT GRID ── */
+.sd-airport-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.sd-airport-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sd-airport-list li {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.sd-airport-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  color: var(--vj-white);
+  text-decoration: none;
+  font-size: .9rem;
+  transition: color .2s;
+}
+.sd-airport-list a:hover { color: var(--vj-orange); text-decoration: none; }
+
+.sd-airport-code {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--vj-orange);
+  margin-right: 14px;
+  min-width: 52px;
+  display: inline-block;
+}
+.sd-airport-arrow { color: rgba(255,255,255,.3); transition: transform .2s; }
+.sd-airport-list a:hover .sd-airport-arrow {
+  transform: translateX(4px);
+  color: var(--vj-orange);
+}
+
+.sd-map-wrap {
+  border: 1px solid rgba(255,83,61,.25);
+}
+.sd-map-wrap iframe {
+  width: 100%;
+  height: 360px;
+  display: block;
+  filter: grayscale(70%) contrast(1.1);
+}
+
+/* ── CTA BANNER ── */
+.sd-cta-banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background:
+    linear-gradient(rgba(15,22,38,.88), rgba(15,22,38,.88)),
+    url('https://images.unsplash.com/photo-1605493624455-a56d6d312b6f?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  padding: 90px 10vw;
+  text-align: center;
+  color: var(--vj-white);
+}
+.sd-cta-inner { max-width: 700px; margin: 0 auto; }
+.sd-cta-banner h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--vj-white);
+}
+.sd-cta-banner p {
+  max-width: 480px;
+  margin: 0 auto 32px;
+  color: rgba(255,255,255,.7);
+}
+
+/* ── SD RESPONSIVE ── */
+@media (max-width: 867px) {
+  .sd-hero {
+    min-height: auto;
+    padding: 100px 6vw 60px;
+    background-position: 70% center;
+  }
+  .sd-stats { grid-template-columns: repeat(2, 1fr); }
+  .sd-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .sd-section,
+  .sd-section-dark,
+  .sd-section-light,
+  .sd-section-white { padding: 60px 6vw; }
+  .sd-aircraft-grid,
+  .sd-services-grid,
+  .sd-airport-grid { grid-template-columns: 1fr; }
+  .sd-aircraft-grid { gap: 1px; }
+  .sd-safety-inner { grid-template-columns: 1fr; }
+  .sd-safety-badges { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+}
