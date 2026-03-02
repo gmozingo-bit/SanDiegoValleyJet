@@ -535,21 +535,43 @@
   position: absolute;
   bottom: -20px;
   right: -20px;
-  background: var(--vj-orange);
-  color: var(--vj-white);
-  padding: 18px 22px;
-  text-align: center;
-  font-weight: 700;
 }
-.lv-intro-badge strong {
+
+
+/* ── MODERN ORANGE BADGE ── */
+.orange-badge-modern {
+  background: linear-gradient(135deg, #FF533D, #ff6a54);
+  border: 2px solid #0F1626;
+  border-radius: 12px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+  padding: 18px 28px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all .25s ease;
+}
+
+.orange-badge-modern strong {
   display: block;
-  font-size: 2rem;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
   line-height: 1;
 }
-.lv-intro-badge span {
-  font-size: .7rem;
-  letter-spacing: .15em;
+
+.orange-badge-modern span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.orange-badge-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
 
 /* ── AIRCRAFT CARDS ── */
